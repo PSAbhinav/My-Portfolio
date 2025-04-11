@@ -49,7 +49,7 @@ export default function Timeline() {
     <section
       id="timeline"
       ref={ref}
-      className="py-24 px-6 bg-black text-white"
+      className="flex flex-col items-center justify-center h-screen text-center bg-gradient-to-tl from-black via-neutral-900 to-black px-6 py-20 relative overflow-hidden"
     >
       <motion.h2
         variants={{

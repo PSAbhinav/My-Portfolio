@@ -24,7 +24,7 @@ export default function About() {
     <section
       id="about"
       ref={ref}
-      className="min-h-screen px-4 py-24 bg-gradient-to-b from-black to-neutral-900 text-white flex flex-col md:flex-row items-center justify-center gap-12 relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-br before:from-neutral-800/20 before:via-neutral-900/30 before:to-neutral-800/20 before:animate-diagonalScroll"
+      className="min-h-screen px-4 py-24 bg-gradient-to-b from-black to-neutral-900 text-white flex flex-col md:flex-row items-center justify-center gap-12 relative overflow-hidden before:absolute before:inset-0 before:z-0 before:bg-gradient-to-br before:from-neutral-800/60 before:via-neutral-900/70 before:to-neutral-800/60 before:animate-diagonalScroll"
     >
       {/* Image section */}
       <motion.div
@@ -38,7 +38,7 @@ export default function About() {
         }}
         initial="hidden"
         animate={controlsImg}
-        className="flex-shrink-0"
+        className="flex-shrink-0 z-10"
       >
         <Image
           src="/Profile_Pic.png"
@@ -61,7 +61,7 @@ export default function About() {
         }}
         initial="hidden"
         animate={controlsText}
-        className="max-w-xl text-center md:text-left"
+        className="max-w-xl text-center md:text-left z-10"
       >
         <h2 className="text-4xl font-bold mb-4">About Me</h2>
         <p className="text-lg text-gray-300 leading-relaxed">

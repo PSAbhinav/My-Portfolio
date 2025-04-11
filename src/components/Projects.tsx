@@ -43,13 +43,13 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-24 px-6 bg-neutral-900 text-white relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-b before:from-neutral-800/20 before:via-neutral-900/30 before:to-neutral-800/20 before:animate-verticalScroll">
+    <section id="projects" className="py-24 px-6 bg-neutral-900 text-white relative overflow-hidden before:absolute before:inset-0 before:z-0 before:bg-gradient-to-b before:from-neutral-900/90 before:via-neutral-950/95 before:to-neutral-900/90 before:animate-verticalScroll">
       <motion.h2
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
         viewport={{ once: false, amount: 0.2 }}
-        className="text-4xl font-bold text-center mb-16"
+        className="text-4xl font-bold text-center mb-16 relative z-10"
       >
         My Projects
       </motion.h2>
@@ -62,7 +62,7 @@ export default function Projects() {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: index * 0.2 }}
             viewport={{ once: false, amount: 0.2 }}
-            className="bg-neutral-800 rounded-lg overflow-hidden shadow-lg"
+            className="bg-neutral-800 rounded-lg overflow-hidden shadow-lg z-10"
           >
             <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
             <div className="p-6">

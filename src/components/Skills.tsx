@@ -35,9 +35,7 @@ export default function Skills() {
     <section
       id="skills"
       ref={ref}
-      className="py-24 px-6 bg-black text-white relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-r before:from-neutral-800/20 before:via-neutral-900/30 before:to-neutral-800/20 before:animate-horizontalScroll"
-
-    >
+      className="py-24 px-6 bg-black text-white relative overflow-hidden before:absolute before:inset-0 before:z-0 before:bg-gradient-to-r before:from-neutral-900/90 before:via-neutral-950/95 before:to-neutral-900/90 before:animate-horizontalScroll">
       <motion.h2
         variants={{
           hidden: { opacity: 0, y: 50 },
@@ -45,7 +43,7 @@ export default function Skills() {
         }}
         initial="hidden"
         animate={controls}
-        className="text-4xl font-bold text-center mb-12"
+        className="text-4xl font-bold text-center mb-12 relative z-10"
       >
         My Skills
       </motion.h2>
@@ -64,7 +62,7 @@ export default function Skills() {
             }}
             initial="hidden"
             animate={controls}
-            className="flex flex-col items-center bg-neutral-900 p-6 rounded-lg shadow-md hover:scale-105 transform transition"
+            className="flex flex-col items-center bg-neutral-900 p-6 rounded-lg shadow-md hover:scale-105 transform transition z-10"
           >
             {skill.icon}
             <span className="mt-2 text-sm">{skill.name}</span>
