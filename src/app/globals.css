@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "tailwindcss";
+
+/* Theme variables */
+:root {
+  --background: #0a0a0a;
+  --foreground: #ffffff;
+}
+
+/* Optional: override via dark mode preference */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* Global styles */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
