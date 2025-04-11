@@ -24,7 +24,7 @@ export default function About() {
     <section
       id="about"
       ref={ref}
-      className="min-h-screen px-4 py-24 bg-gradient-to-b from-black to-neutral-900 text-white flex flex-col md:flex-row items-center justify-center gap-12"
+      className="min-h-screen px-4 py-24 bg-gradient-to-b from-black to-neutral-900 text-white flex flex-col md:flex-row items-center justify-center gap-12 relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-br before:from-neutral-800/20 before:via-neutral-900/30 before:to-neutral-800/20 before:animate-diagonalScroll"
     >
       {/* Image section */}
       <motion.div

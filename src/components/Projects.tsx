@@ -7,35 +7,35 @@ const projects = [
   {
     title: 'AI Chess Bot',
     description: 'Play Smarter: A bot that plays chess using an AI engine trained to improve with every move. Built for fun, challenge, and learning.',
-    image: '/projects/recipe.png',
+    image: '/projects/AI Chess Bot.png',
     github: 'https://github.com/yourusername/recipe-recommendation',
     demo: 'https://your-recipe-app.netlify.app',
   },
   {
     title: 'Audio-to-Text Converter',
     description: 'Convert Speech to Insights: A lightweight app that turns your audio notes into accurate, editable text using speech recognition.',
-    image: '/projects/portfolio.png',
+    image: '/projects/Audio-To-Text Converter.png',
     github: 'https://github.com/yourusername/portfolio',
     demo: 'https://your-portfolio.netlify.app',
   },
   {
     title: 'Basic Firewall',
     description: 'Network Defense Simplified: A beginner-friendly but functional firewall that detects suspicious activity using basic filtering rules.',
-    image: '/projects/chatapp.png',
+    image: '/projects/Basic Firewall.png',
     github: 'https://github.com/yourusername/chat-app',
     demo: 'https://your-chat-app.netlify.app',
   },
   {
     title: 'AcadMaster – CGPA/SGPA Calculator',
     description: 'Your Academic Companion: Automates GPA calculations, supports multiple grading systems, and stores historical results.',
-    image: '/projects/chatapp.png',
+    image: '/projects/AcadMaster - CGPA and SGPA Calculator.png',
     github: 'https://github.com/yourusername/chat-app',
     demo: 'https://your-chat-app.netlify.app',
   },
   {
     title: 'AI Recipe Recommender (Currently Working)',
     description: 'Cook with AI: Input your ingredients and let the AI suggest recipes. Includes voice assistant, cooking timer, and smart UX.',
-    image: '/projects/chatapp.png',
+    image: '/projects/AI Recipe Recommender.png',
     github: 'https://github.com/yourusername/chat-app',
     demo: 'https://your-chat-app.netlify.app',
   }
@@ -43,7 +43,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-24 px-6 bg-neutral-900 text-white">
+    <section id="projects" className="py-24 px-6 bg-neutral-900 text-white relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-b before:from-neutral-800/20 before:via-neutral-900/30 before:to-neutral-800/20 before:animate-verticalScroll">
       <motion.h2
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}

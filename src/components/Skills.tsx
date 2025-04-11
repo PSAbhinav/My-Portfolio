@@ -35,7 +35,8 @@ export default function Skills() {
     <section
       id="skills"
       ref={ref}
-      className="py-24 px-6 bg-black text-white"
+      className="py-24 px-6 bg-black text-white relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-r before:from-neutral-800/20 before:via-neutral-900/30 before:to-neutral-800/20 before:animate-horizontalScroll"
+
     >
       <motion.h2
         variants={{

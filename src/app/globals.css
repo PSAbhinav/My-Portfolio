@@ -37,3 +37,39 @@ html, body {
 * {
   box-sizing: border-box;
 }
+
+@keyframes diagonalScroll {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 100% 100%; }
+}
+@keyframes diagonalScrollReverse {
+  0% { background-position: 100% 0%; }
+  100% { background-position: 0% 100%; }
+}
+@keyframes horizontalScroll {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 100% 0%; }
+}
+@keyframes verticalScroll {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 0% 100%; }
+}
+
+@layer utilities {
+  .before\:animate-diagonalScroll::before {
+    animation: diagonalScroll 20s linear infinite;
+    background-size: 200% 200%;
+  }
+  .before\:animate-diagonalScrollReverse::before {
+    animation: diagonalScrollReverse 20s linear infinite;
+    background-size: 200% 200%;
+  }
+  .before\:animate-horizontalScroll::before {
+    animation: horizontalScroll 20s linear infinite;
+    background-size: 200% 100%;
+  }
+  .before\:animate-verticalScroll::before {
+    animation: verticalScroll 20s linear infinite;
+    background-size: 100% 200%;
+  }
+}

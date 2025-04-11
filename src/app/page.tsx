@@ -67,7 +67,7 @@ export default function Home() {
       {/* Hero Section */}
       <section
         ref={heroRef}
-        className="flex flex-col items-center justify-center h-screen text-center px-4"
+        className="flex flex-col items-center justify-center h-screen text-center bg-gradient-to-br from-black via-neutral-900 to-black px-6 py-20 relative overflow-hidden"
       >
         <h1 className="text-5xl md:text-7xl font-bold mb-4 font-mono">
           {displayText}
