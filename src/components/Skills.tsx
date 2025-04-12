@@ -57,12 +57,12 @@ export default function Skills() {
               visible: {
                 opacity: 1,
                 scale: 1,
-                transition: { duration: 0.5, delay: index * 0.1 }
+                transition: { duration: 0.7, delay: index * 0.2 }
               }
             }}
             initial="hidden"
             animate={controls}
-            className="flex flex-col items-center bg-neutral-900 p-6 rounded-lg shadow-md hover:scale-105 transform transition z-10"
+            className="flex flex-col items-center bg-neutral-900 p-6 rounded-lg shadow-md hover:scale-105 transform transition z-10 "
           >
             {skill.icon}
             <span className="mt-2 text-sm">{skill.name}</span>

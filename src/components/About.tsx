@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 export default function About() {
   const ref = useRef(null)
-  const isInView = useInView(ref, { margin: '-100px', amount: 0.5 }) // triggers when 50% is visible
+  const isInView = useInView(ref, { margin: '-100px', amount: 0.2 }) // triggers when 20% is visible
   const controlsImg = useAnimation()
   const controlsText = useAnimation()
 
@@ -56,7 +56,7 @@ export default function About() {
           visible: {
             opacity: 1,
             y: 0,
-            transition: { duration: 2.0, delay: 0.5, ease: 'easeOut' },
+            transition: { duration: 0.8, delay: 0.2, ease: 'easeOut' },
           },
         }}
         initial="hidden"
