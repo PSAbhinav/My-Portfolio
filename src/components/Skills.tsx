@@ -20,7 +20,7 @@ const skills = [
 
 export default function Skills() {
   const ref = useRef(null)
-  const isInView = useInView(ref, { margin: '-100px', amount: 0.5 })
+  const isInView = useInView(ref, { margin: ' -20% 0px', amount: 0.2 })
   const controls = useAnimation()
 
   useEffect(() => {
@@ -35,7 +35,7 @@ export default function Skills() {
     <section
       id="skills"
       ref={ref}
-      className="py-24 px-6 bg-black text-white relative overflow-hidden before:absolute before:inset-0 before:z-0 before:bg-gradient-to-r before:from-neutral-900/90 before:via-neutral-950/95 before:to-neutral-900/90 before:animate-horizontalScroll">
+      className="min-h-screen py-24 px-6 bg-black text-white relative overflow-hidden before:absolute before:inset-0 before:z-0 before:bg-gradient-to-r before:from-neutral-900/90 before:via-neutral-950/95 before:to-neutral-900/90 before:animate-horizontalScroll">
       <motion.h2
         variants={{
           hidden: { opacity: 0, y: 50 },
@@ -48,7 +48,7 @@ export default function Skills() {
         My Skills
       </motion.h2>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 max-w-6xl mx-auto z-10">
         {skills.map((skill, index) => (
           <motion.div
             key={index}
