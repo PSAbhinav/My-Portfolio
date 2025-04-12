@@ -97,7 +97,7 @@ export default function Home() {
                       hidden: { opacity: 0, y: 10 },
                       visible: { opacity: 1, y: 0 },
                     }}
-                    transition={{ duration: 0.3 }}
+                    transition={{ duration: 0.8 }}
                     className="whitespace-pre"
                   >
                     {char}

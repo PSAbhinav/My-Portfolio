@@ -34,7 +34,7 @@ const roadmapData = [
 
 export default function Timeline() {
   const ref = useRef(null)
-  const isInView = useInView(ref, { margin: '-100px', amount: 0.5 })
+  const isInView = useInView(ref, { margin: '-100px', amount: 0.2 })
   const controls = useAnimation()
 
   useEffect(() => {
@@ -49,7 +49,7 @@ export default function Timeline() {
     <section
       id="timeline"
       ref={ref}
-      className="flex flex-col items-center justify-center h-screen text-center bg-gradient-to-tl from-black via-neutral-900 to-black px-6 py-20 relative overflow-hidden"
+      className="flex flex-col items-center justify-center h-screen text-center bg-gradient-to-tl from-neutral-950 via-neutral-900 to-neutral-950 px-6 py-20 relative overflow-hidden"
     >
       <motion.h2
         variants={{
@@ -76,7 +76,7 @@ export default function Timeline() {
               visible: {
                 opacity: 1,
                 x: 0,
-                transition: { duration: 0.5, delay: index * 0.2 },
+                transition: { duration: 1.0, delay: index * 0.4 },
               },
             }}
             initial="hidden"
