@@ -9,13 +9,13 @@ export default function Footer() {
 
         {/* Left: Developer Credit */}
         <p className="text-sm text-gray-400">
-          © {new Date().getFullYear()} Built with ❤️ by <span className="text-white font-semibold">Abhinav</span>
+          © {new Date().getFullYear()} Developed by <span className="text-white font-semibold">Abhinav</span>
         </p>
 
         {/* Right: Social Icons */}
         <div className="flex gap-4">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/PSAbhinav"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-white transition text-lg"
@@ -23,18 +23,12 @@ export default function Footer() {
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://linkedin.com/in/abhinav-pemmaraju-765221255"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-white transition text-lg"
           >
             <FaLinkedin />
-          </a>
-          <a
-            href="mailto:youremail@example.com"
-            className="text-gray-400 hover:text-white transition text-lg"
-          >
-            <FaEnvelope />
           </a>
         </div>
       </div>
